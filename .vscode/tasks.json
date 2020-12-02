@@ -1,27 +1,34 @@
 {
+    "version": "2.0.0",
     "tasks": [
-        {
-            "type": "cppbuild",
-            "label": "C/C++: cpp.exe build active file",
-            "command": "C:\\MinGW\\bin\\cpp.exe",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "C:\\MinGW\\bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Generated task by Debugger"
-        }
+    {
+    "label": "build & debug file",
+    "type": "shell",
+    "command": "g++",
+    "args": [
+    "-g",
+    "-o",
+    "${fileBasenameNoExtension}",
+    "${file}"
     ],
-    "version": "2.0.0"
-}
+    "group": {
+    "kind": "build",
+    "isDefault": true
+    }
+    },
+    {
+    "label": "build & run file",
+    "type": "shell",
+    "command": "g++",
+    "args": [
+    "-o",
+    "${fileBasenameNoExtension}",
+    "${file}"
+    ],
+    "group": {
+    "kind": "build",
+    "isDefault": true
+    }
+    }
+    ]
+    }

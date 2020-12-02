@@ -42646,7 +42646,8 @@ extern "C" HRESULT __attribute__((__stdcall__)) OleConvertOLESTREAMToIStorageEx(
 # 4 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 2
 
 
-# 5 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+
+# 6 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
 using namespace std;
 int main(int argc, char *argv[])
 {
@@ -42655,41 +42656,41 @@ int main(int argc, char *argv[])
     STARTUPINFO si;
     memset(&si, 0, sizeof(STARTUPINFO));
     si.wShowWindow = 
-# 12 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
+# 13 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
                     5
-# 12 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 13 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                            ;
     PROCESS_INFORMATION pi;
     if (argc == 2)
     {
         if (!
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
             CreateProcessA
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                          (
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                           __null
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                               , argv[1], 
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                                __null
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                    , 
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                                      __null
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                          , 
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
                                                            0
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                                 , 0, 
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                                                      __null
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                                          , 
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                                                            __null
-# 16 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 17 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                                                , &si, &pi))
         {
             cout << "Create Fail" << endl;
@@ -42701,33 +42702,33 @@ int main(int argc, char *argv[])
         char *str = strcat(argv[1], " ");
         str = strcat(str, argv[2]);
         if (!
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
             CreateProcessA
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                          (
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                           __null
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                               , str, 
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                            __null
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                , 
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                                  __null
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                      , 
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
                                                        0
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                             , 0, 
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                                                  __null
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                                      , 
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3 4
                                                                        __null
-# 26 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 27 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                                                            , &si, &pi))
         {
             cout << "Create Fail" << endl;
@@ -42737,9 +42738,9 @@ int main(int argc, char *argv[])
 
     GetSystemTime(&start);
     WaitForSingleObject(pi.hProcess, 
-# 34 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
+# 35 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp" 3
                                     0xFFFFFFFF
-# 34 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
+# 35 "e:\\reposities\\OS-Lib\\lib 2\\Program\\mytime.cpp"
                                             );
     GetSystemTime(&end);
 
