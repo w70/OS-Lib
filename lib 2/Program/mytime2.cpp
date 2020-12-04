@@ -43,8 +43,10 @@ int main(int argc, char *argv[])
         wait(0); 
         gettimeofday(&endTime, &zone);
         long long int during = (endTime.tv_sec - startTime.tv_sec) * 1000000 + endTime.tv_usec - startTime.tv_usec;
-        millisecond = during % 1000000;
-        second = during / 1000000;
+        millisecond = during / 1000;
+        during%=1000;
+        second = millisecond / 1000;
+        millisecond%=1000;
         minute = second / 60;
         second %= 60;
         hour = minute / 60;
@@ -94,7 +96,9 @@ int main(int argc, char *argv[])
         if (second > 0)
             printf("%d 秒 ", second);
         if(millisecond>0)
-            printf("%d 微秒 ",millisecond);
+            printf("%d 毫秒 ",millisecond);
+        if(during>0)
+            printf("%lld 微秒 ",during);
         printf("\n");
         return 0;
     }
